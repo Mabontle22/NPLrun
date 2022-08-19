@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <title>Home | Ka Mover</title>
+  <title>Drivers | Ka Mover</title>
   <style>
      .password {
         border-radius: 25px;
@@ -59,25 +59,22 @@
     }
   </style>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-md  fixed-top maine-menu">
     <div class="container">
-      <button class="navbar-toggler ml-auto" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"> 
-        <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> 
-      </button>
+      <button class="navbar-toggler ml-auto" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </button>
       <div id="my-nav" class="collapse navbar-collapse">
+        
         <ul class="navbar-nav mx-auto">
           <a href="index.html"><img style="width:200px;" src="assets/img/KaMover.png" alt="">
           </a>
-          <li class="nav-item"> <a class="nav-link" href="drivers.html" tabindex="-1" aria-disabled="true">View Drivers</a></li> 
+          <li class="nav-item"> <a class="nav-link" href="index.html" tabindex="-1" aria-disabled="true">Home</a></li> 
         </ul>
       </div>
     </div>
   </nav>
-
-  <br>
-
-
+<br>
   <div class="container-fluid fh5co-insta-feed activity">
     
     <div class="container recent">
@@ -91,7 +88,7 @@
                 <p></p>
                 <a href="#" class="  justify-content-center">
                   <form action="#" class=" d-flex  " data-aos="fade-up" data-aos-delay="200">
-                    <input type="text" class="form-control password" placeholder="Where are you going?">
+                    <input type="text" class="form-control password" placeholder="So...Where to?">
                     <button type="submit" class="signin-button">Search</button>
                   </form>
                 </a>
@@ -101,70 +98,508 @@
         </div>
       
       </div>
+    
+
+
+<head>
+ 
+<style>
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Didact+Gothic&display=swap");
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-size: 16px;
+    color: #292929;
+    line-height: 1.7em;
+    font-weight: 400;
+    background: #F0F0F0;
+    font-family: "Didact Gothic", sans-serif;
+    
+}
+
+
+.section-bg {
+    padding: 60px 0;
+    background: #F0F0F0;
+}
+
+
+.section-title {
+    margin-bottom: 25px;
+}
+
+.section-title h2 {
+    position: relative;
+    font-size: 32px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 1;
+    text-transform: capitalize;
+    display: inline-block;
+    font-family: "Didact Gothic", sans-serif;
+}
+
+
+
+
+
+
+
+.single-product {
+    box-shadow: inset -2px -2px 8px white,
+     inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+       inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 3px;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 50px;
+}
+
+.single-product .product-thumb {
+    margin-bottom: 10px;
+}
+
+.single-product .product-title {
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.single-product .product-title h3 {
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.single-product .product-title h3 a {
+    color: #292929;
+    text-decoration: none;
+}
+
+.single-product .product-title h3 a:hover {
+    color: #7289ab;
+}
+
+.single-product:hover {
+    box-shadow: -2px -2px 8px white,
+     -2px -2px 12px rgba(255, 255, 255, 0.5),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+       2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.product-btns
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+    color: #292929;
+}
+
+
+
+
+
+
+
+
+.btn-small {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: inset -2px -2px 8px white,
+     inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+       inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
+}
+
+
+.btn-round {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: -2px -2px 8px white, 
+    -2px -2px 12px rgba(255, 255, 255, 0.5), 
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+     2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+.btn-small:hover {
+    box-shadow: -2px -2px 8px white,
+     -2px -2px 12px rgba(255, 255, 255, 0.5),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+       2px 2px 8px rgba(0, 0, 0, 0.15);
+    color: #7289ab;
+    text-decoration: none;
+}
+
+.btn-small:hover span {
+    display: inline-block;
+    transform: scale(0.98);
+}
+
+
+.btn-round:hover {
+    box-shadow: inset -2px -2px 8px white,
+     inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+       inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+    color: #7289ab;
+}
+
+
+.button-center
+{
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+.bttn-def {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 42px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    box-shadow: -2px -2px 8px white, -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
+}
+
+.bttn-def:hover {
+    color: #7289ab;
+    box-shadow: inset -2px -2px 8px white, inset -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.bttn-def:hover span {
+    display: inline-block;
+    transform: scale(0.98);
+}
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+        <div class="container">
+           
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-title">
+                        <h4>Find your driver</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+              
+               
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="single-product">
+                    <div class="product-thumb">
+                        <img src="img/truck1.jpg" alt="">
+                    </div>
+                    <div class="product-title">
+                        <h3><a href="">Frank - Pretoria</a></h3>
+                    </div>
+                    <div class="product-btns">
       
-      <div class="row">
-        <div class="owl-carousel owl-carousel2 owl-theme">
-          <div>
-            <div class="card"> 
-              <a href="#"> <img class="card-img" src="assets/img/truck-A.jpg" alt="">
-              <div class="card-img-overlay"> 
-                <div class="bottom-text">
-                  <h5 class="card-title">Local</h5>
-                  <p class="card-text">Kasi to Kasi, Street to street in the City or the Hood</p>
+                      <a href="tel:0769693677" class="btn-small mr-2" download="Sbuda's truck"> Call</a>
+                       
+                        <a href="" class="btn-round"><i class="fa fa-heart">view</i></a>
+                    </div>
                 </div>
+            </div>
+            
+               
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div class="single-product">
+                  <div class="product-thumb">
+                      <img src="img/truck2.jpg" alt="">
+                  </div>
+                  <div class="product-title">
+                      <h3><a href="">Nigel - Pretoria</a></h3>
+                  </div>
+                  <div class="product-btns">
+                    <a href="tel:0764359802" class="btn-small mr-2" download="Sbuda's truck"> Call</a> 
+                        <a href="" class="btn-round"><i class="fa fa-heart">view</i></a>
+                    </div>
               </div>
-            </a>
+          </div>
+          
+               
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <div class="single-product">
+                <div class="product-thumb">
+                    <img src="img/truck3.jpg" alt="">
+                </div>
+                <div class="product-title">
+                    <h3><a href="">Lekwe - Pretoria</a></h3>
+                </div>
+                <div class="product-btns">
+                  <a href="tel:0608130590" class="btn-small mr-2" download="Sbuda's truck"> Call</a>
+                   
+                        <a href="" class="btn-round"><i class="fa fa-heart">view</i></a>
+                    </div>
+            </div>
+        </div>
+        
+               
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <div class="single-product">
+              <div class="product-thumb">
+                  <img src="img/truck4.jpg" alt="">
+              </div>
+              <div class="product-title">
+                  <h3><a href="">Lloyd - Pretoria</a></h3>
+              </div>
+              <div class="product-btns">
+                <a href="tel:+4733378901" class="btn-small mr-2" download="Sbuda's truck"> Call</a>
+                 
+                <a href="" class="btn-round"><i class="fa fa-heart">view</i></a>
             </div>
           </div>
-          <div>
-            <div class="card"> 
-              <a href="#"> <img class="card-img" src="assets/img/truck-B.jpg" alt="">
-              <div class="card-img-overlay"> 
-                <div class="bottom-text">
-                  <h5 class="card-title">Inter-City</h5>
-                  <p class="card-text">Jozi to Pretoria to Polokwane and beyound.</p>
+      </div>
+      
+               
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+        <div class="single-product">
+            <div class="product-thumb">
+                <img src="img/truck3.jpg" alt="">
+            </div>
+            <div class="product-title">
+                <h3><a href="">Chris - Pretoria</a></h3>
+            </div>
+            <div class="product-btns">
+              <a href="tel:0728403858" class="btn-small mr-2" download="Sbuda's truck"> Call</a>
+               
+              <a href="" class="btn-round"><i class="fa fa-heart">view</i></a>
+          </div>
+        </div>
+    </div>
+    
+               
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+      <div class="single-product">
+          <div class="product-thumb">
+              <img src="img/truck1.jpg" alt="">
+          </div>
+          <div class="product-title">
+              <h3><a href="">Valentine - Pretoria</a></h3>
+          </div>
+          <div class="product-btns">
+            <a href="tel:+4733378901" class="btn-small mr-2" download="Sbuda's truck"> Call</a>
+             
+            <a href="" class="btn-round"><i class="fa fa-heart">view</i></a>
+        </div>
+      </div>
+  </div>
+               
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <div class="single-product">
+                <div class="product-thumb">
+                    <img src="img/truck4.jpg" alt="">
                 </div>
+                <div class="product-title">
+                    <h3><a href="">Bornwell - Pretoria</a></h3>
+                </div>
+                <div class="product-btns">
+                  <a href="tel:0642373841" class="btn-small mr-2" download="Sbuda's truck"> Call</a>
+                   
+                  <a href="" class="btn-round"><i class="fa fa-heart">view</i></a>
               </div>
-              </a>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <div class="single-product">
+              <div class="product-thumb">
+                  <img src="img/truck4.jpg" alt="">
+              </div>
+              <div class="product-title">
+                  <h3><a href="">Fortune - Pretoria</a></h3>
+              </div>
+              <div class="product-btns">
+                <a href="tel:0874909955" class="btn-small mr-2" download="Sbuda's truck"> Call</a>
+                 
+                <a href="" class="btn-round"><i class="fa fa-heart">view</i></a>
             </div>
           </div>
-          <div>
-            <div class="card"> 
-              <a href="#"> <img class="card-img" src="assets/img/truck-C.jpg" alt="">
-              <div class="card-img-overlay"> 
-                <div class="bottom-text">
-                  <h5 class="card-title">Provical</h5>
-                  <p class="card-text">From a your home in one province to another</p>
-                </div>
-              </div>
-              </a>
+      </div>
+
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+        <div class="single-product">
+            <div class="product-thumb">
+                <img src="img/truck4.jpg" alt="">
             </div>
+            <div class="product-title">
+                <h3><a href="">Ben - JHB</a></h3>
+            </div>
+            <div class="product-btns">
+              <a href="tel:0630759203" class="btn-small mr-2" download="Sbuda's truck"> Call</a>
+              
+              <a href="" class="btn-round"><i class="fa fa-heart">view</i></a>
           </div>
-          <div>
-            <div class="card"> 
-              <a href="#"> <img class="card-img" src="assets/img/truck-D.jpg" alt="">
-              <div class="card-img-overlay"> 
-                <div class="bottom-text">
-                  <h5 class="card-title">Commercial</h5>
-                  <p class="card-text">Logistics solutions for businesses of all sizes.</p>
+        </div>
+    </div>
+               
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+      <div class="single-product">
+          <div class="product-thumb">
+              <img src="img/truck4.jpg" alt="">
+          </div>
+          <div class="product-title">
+              <h3><a href="">Filix - JHB</a></h3>
+          </div>
+          <div class="product-btns">
+            <a href="tel:0623685158" class="btn-small mr-2" download="Sbuda's truck"> Call</a>
+             
+            <a href="" class="btn-round"><i class="fa fa-heart">view</i></a>
+        </div>
+      </div>
+  </div>
+
+  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+    <div class="single-product">
+        <div class="product-thumb">
+            <img src="img/truck4.jpg" alt="">
+        </div>
+        <div class="product-title">
+            <h3><a href="">Bizi - Pretoria</a></h3>
+        </div>
+        <div class="product-btns">
+          <a href="tel:0842879663" class="btn-small mr-2" download="Sbuda's truck"> Call</a>
+           
+          <a href="" class="btn-round"><i class="fa fa-heart">view</i></a>
+      </div>
+    </div>
+</div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-product">
+                        <div class="product-thumb">
+                            <img src="img/truck2.jpg" alt="">
+                        </div>
+                        <div class="product-title">
+                            <h3><a href="">John - Pretoria</a></h3>
+                        </div>
+                        <div class="product-btns">
+                          <a href="tel:0734536766" class="btn-small mr-2" download="Sbuda's truck"> Call</a>
+                           
+                          <a href="" class="btn-round"><i class="fa fa-heart">view</i></a>
+                      </div>
+                    </div>
                 </div>
+  
+            </div>
+
+            <div class="row button-center">
+                <div class="col-xl-6 centered">
+                    <a href="" class="bttn-def"><span>Load more</span></a>
+                </div>
+            </div>
+
+        </div>
+
+ 
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" class="fa fa-close"></span>
+                </button>
+                <p>Did you know you get a part time job from Ramphele funerals?</p>
+
+                <div class="product-btns">
+                  <a href="https://ramphela-funerals.business.site/?utm_source=gmb&utm_medium=referral" class="btn-small mr-2" >learn more</a>
               </div>
-              </a>
+              </div>
+              <div class="modal-body p-4 p-md-5">
+                <form action="#" class="appointment-form ftco-animate">
+                  <h5>Sibusiso Nobevu: 63 Trey Sunnyside</h5>
+                  <a href="#"> <img class="card-img" src="assets/img/truck5.jpg" alt="Sbuda's Truck">
+                    </a>
+                    <br><br>
+                    <div class="product-btns" style="padding-top: 5px;">
+                      <a href="tel:+4733378901" class="btn-small mr-2" download="Sbuda's truck"> Call</a>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    
+      
      
       <div class="row social-links">
         <ul class="nav mx-auto">
-          <li class="nav-item"> <a class="nav-link" href="https://www.facebook.com/fh5co"><img src="assets/img/facebook.png" alt=""></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="https://twitter.com/fh5co"><img src="assets/img/twitter.png" alt=""></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="https://www.facebook.com"><img src="assets/img/facebook.png" alt=""></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="https://twitter.com/"><img src="assets/img/twitter.png" alt=""></a> </li>
           <li class="nav-item"> <a class="nav-link" href="#"><img src="assets/img/pinterest.png" alt=""></a> </li>
           <li class="nav-item"> <a class="nav-link" href="#"><img src="assets/img/google-plus.png" alt=""></a> </li>
         </ul>
       </div>
-      <p class="text-center d-block"><a href="https://sowetolive.com/about" target="_blank"> &copy; 2022 | Soweto Live</a>  &nbsp;  |  &nbsp; powered by <a href="https://siyapercy.co.za/" target="_blank">thumaina</a> &nbsp; | &nbsp;  All rights reserved</p>
+      <p class="text-center d-block"><a href="https://sowetolive.com/about" target="_blank"> &copy; 2022 | KaMover</a>  &nbsp;  |  &nbsp; powered by <a href="https://siyapercy.co.za/" target="_blank">thumaina</a> &nbsp; | &nbsp;  All rights reserved</p>
     
     </div>
   </div>
@@ -176,6 +611,5 @@
   <script src="assets/js/bootstrap.min.js"></script> 
   <script src="assets/js/owl.carousel.min.js"></script> 
   <script src="assets/js/main.js"></script>
-
 </body>
 </html>
