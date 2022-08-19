@@ -1,0 +1,2087 @@
+<div class="card" id="card-visitors">
+   <input type="checkbox" id="card-visitors-indicator" />
+   <div class="header">
+      <label class="indicator" for="card-visitors-indicator">
+         <svg class="open" width="18" height="27">
+            <line x1="1.5" y1="12" x2="2" y2="25" stroke-linecap="round" style="stroke: #FFFFFF; stroke-width: 3;" />
+            <line x1="9" y1="7" x2="9" y2="25" stroke-linecap="round" style="stroke: #FFFFFF; stroke-width: 3;" />
+            <line x1="16.5" y1="2" x2="16.5" y2="25" stroke-linecap="round" style="stroke: #FFFFFF; stroke-width: 3;" />
+         </svg>
+         <svg class="close" width="15" height="25">
+            <line x1="1.5" y1="13.5" x2="15" y2="0" style="stroke: #FFFFFF; stroke-width: 3" />
+            <line x1="1.5" y1="11.5" x2="15" y2="25" style="stroke: #FFFFFF; stroke-width: 3" />
+         </svg>
+      </label>
+      <div class="content">
+         <div class="data">
+            <div class="top">
+               <p class="title">Visitors</p>
+               <p class="date">01 Sep 2016 - 15 Sep 2016</p>
+            </div>
+            <div class="graph">
+               <div class="horizontal">
+                  <div>
+                     <hr>
+                     <p>200</p>
+                  </div>
+                  <div>
+                     <hr>
+                  </div>
+                  <div>
+                     <hr>
+                     <p>100</p>
+                  </div>
+                  <div>
+                     <hr>
+                  </div>
+                  <div>
+                     <hr>
+                     <p>0</p>
+                  </div>
+               </div>
+               <div class="vertical">
+                  <div class="day">
+                     <div class="line-container">
+                        <div class="line" style="height: 12%"></div>
+                     </div>
+                     <p>01</p>
+                  </div>
+                  <div class="day">
+                     <div class="line-container">
+                        <div class="line" style="height: 19%"></div>
+                     </div>
+                     <p class="hidden">02</p>
+                  </div>
+                  <div class="day">
+                     <div class="line-container">
+                        <div class="line" style="height: 8%"></div>
+                     </div>
+                     <p>03</p>
+                  </div>
+                  <div class="day">
+                     <div class="line-container">
+                        <div class="line" style="height: 15%"></div>
+                     </div>
+                     <p class="hidden">04</p>
+                  </div>
+                  <div class="day">
+                     <div class="line-container">
+                        <div class="line" style="height: 28%"></div>
+                     </div>
+                     <p>05</p>
+                  </div>
+                  <div class="day">
+                     <div class="line-container">
+                        <div class="line" style="height: 45%"></div>
+                     </div>
+                     <p class="hidden">06</p>
+                  </div>
+                  <div class="day">
+                     <div class="line-container">
+                        <div class="line" style="height: 61%"></div>
+                     </div>
+                     <p>07</p>
+                  </div>
+                  <div class="day">
+                     <div class="line-container">
+                        <div class="line" style="height: 46%"></div>
+                     </div>
+                     <p class="hidden">08</p>
+                  </div>
+                  <div class="day">
+                     <div class="line-container">
+                        <div class="line" style="height: 39%"></div>
+                     </div>
+                     <p>09</p>
+                  </div>
+                  <div class="day">
+                     <div class="line-container">
+                        <div class="line" style="height: 52%"></div>
+                     </div>
+                     <p class="hidden">10</p>
+                  </div>
+                  <div class="day">
+                     <div class="line-container">
+                        <div class="line" style="height: 32%"></div>
+                     </div>
+                     <p>11</p>
+                  </div>
+                  <div class="day">
+                     <div class="line-container">
+                        <div class="line" style="height: 9.5%"></div>
+                     </div>
+                     <p class="hidden">12</p>
+                  </div>
+                  <div class="day">
+                     <div class="line-container">
+                        <div class="line" style="height: 41%"></div>
+                     </div>
+                     <p>13</p>
+                  </div>
+                  <div class="day">
+                     <div class="line-container">
+                        <div class="line" style="height: 79%"></div>
+                     </div>
+                     <p class="hidden">14</p>
+                  </div>
+                  <div class="day">
+                     <div class="line-container">
+                        <div class="line" style="height: 15%"></div>
+                     </div>
+                     <p>15</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <p class="title">Today</p>
+         <p class="date">15 Sep 2016</p>
+         <div class="float"></div>
+      </div>
+   </div>
+   <div class="info">
+      <p>Total Visitors of the<br>Public Website</p>
+      <p class="counter">30<span class="unit"> VIS</span></p>
+   </div>
+</div>
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=latin-ext';
+
+* {
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #212121;
+	background-color: #212121;
+}
+
+.indicator {
+	cursor: pointer;
+}
+
+.card {
+	background-color: #FFFFFF;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	border-radius: 5px;
+}
+
+.card#card-visitors {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	margin: calc((100vh - 400px) / 2) auto;
+}
+
+.card#card-visitors input[type="checkbox"]#card-visitors-indicator {
+	display: none;
+}
+
+.card#card-visitors input[type="checkbox"]#card-visitors-indicator:checked + .header label.indicator {
+	top: 30%;
+	right: calc(50% - 25px);
+	margin: calc(-30% - 25px) calc(50% - 25px) 0 0;
+	background-color: transparent;
+	-webkit-transition: top 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, right 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, background-color 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0.6s, margin 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0.9s;
+	-moz-transition: top 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, right 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, background-color 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0.6s, margin 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0.9s;
+	-o-transition: top 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, right 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, background-color 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0.6s, margin 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0.9s;
+	-ms-transition: top 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, right 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, background-color 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0.6s, margin 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0.9s;
+	transition: top 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, right 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, background-color 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0.6s, margin 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0.9s;
+}
+
+.card#card-visitors input[type="checkbox"]#card-visitors-indicator:checked + .header label.indicator .open {
+	opacity: 0;
+	-webkit-transition: opacity 0.2s cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-moz-transition: opacity 0.2s cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-o-transition: opacity 0.2s cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-ms-transition: opacity 0.2s cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	transition: opacity 0.2s cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+}
+
+.card#card-visitors input[type="checkbox"]#card-visitors-indicator:checked + .header label.indicator .close {
+	transform: scale(1);
+	-webkit-transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1) 0.9s;
+	-moz-transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1) 0.9s;
+	-o-transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1) 0.9s;
+	-ms-transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1) 0.9s;
+	transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1) 0.9s;
+}
+
+.card#card-visitors input[type="checkbox"]#card-visitors-indicator:checked + .header .content .data {
+	opacity: 1;
+	-webkit-transition: opacity 0.8s cubic-bezier(0.4, 0.0, 0.2, 1) 0.45s;
+	-moz-transition: opacity 0.8s cubic-bezier(0.4, 0.0, 0.2, 1) 0.45s;
+	-o-transition: opacity 0.8s cubic-bezier(0.4, 0.0, 0.2, 1) 0.45s;
+	-ms-transition: opacity 0.8s cubic-bezier(0.4, 0.0, 0.2, 1) 0.45s;
+	transition: opacity 0.8s cubic-bezier(0.4, 0.0, 0.2, 1) 0.45s;
+}
+
+.card#card-visitors input[type="checkbox"]#card-visitors-indicator:checked + .header .content .data .graph .vertical .day .line-container {
+	max-height: 80%;
+	-webkit-transition: max-height 0.6s cubic-bezier(0.4, 0.0, 0.2, 1) 0.9s;
+	-moz-transition: max-height 0.6s cubic-bezier(0.4, 0.0, 0.2, 1) 0.9s;
+	-o-transition: max-height 0.6s cubic-bezier(0.4, 0.0, 0.2, 1) 0.9s;
+	-ms-transition: max-height 0.6s cubic-bezier(0.4, 0.0, 0.2, 1) 0.9s;
+	transition: max-height 0.6s cubic-bezier(0.4, 0.0, 0.2, 1) 0.9s;
+}
+
+.card#card-visitors input[type="checkbox"]#card-visitors-indicator:checked + .header .content .float {
+	opacity: 1;
+	transform: scale(10);
+	-webkit-transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s, opacity 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s;
+	-moz-transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s, opacity 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s;
+	-o-transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s, opacity 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s;
+	-ms-transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s, opacity 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s;
+	transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s, opacity 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s;
+}
+
+.card#card-visitors .header {
+	width: 100%;
+	height: 60%;
+	background-color: #E91E63;
+}
+
+.card#card-visitors .header label.indicator {
+	position: absolute;
+	z-index: 1;
+	width: 50px;
+	height: 50px;
+	top: calc(60% - 25px);
+	right: 20px;
+	margin: 0;
+	border-radius: 100%;
+	background-color: #FF9800;
+	-webkit-transition: top 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s, right 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s, background-color 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, margin 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s;
+	-moz-transition: top 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s, right 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s, background-color 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, margin 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s;
+	-o-transition: top 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s, right 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s, background-color 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, margin 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s;
+	-ms-transition: top 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s, right 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s, background-color 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, margin 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s;
+	transition: top 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s, right 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s, background-color 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, margin 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.3s;
+}
+
+.card#card-visitors .header label.indicator .open {
+	position: absolute;
+	margin: 11.5px 16px;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.6s;
+	-moz-transition: opacity 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.6s;
+	-o-transition: opacity 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.6s;
+	-ms-transition: opacity 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.6s;
+	transition: opacity 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0.6s;
+}
+
+.card#card-visitors .header label.indicator .close {
+	margin: 12.5px 17.5px;
+	transform: scale(0);
+	-webkit-transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+	-moz-transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+	-o-transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+	-ms-transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+	transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+}
+
+.card#card-visitors .header .content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.card#card-visitors .header .content > * {
+	color: #FFFFFF;
+	font-weight: 500;
+}
+
+.card#card-visitors .header .content .data {
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-color: #FF9800;
+	-webkit-transition: opacity 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+	-moz-transition: opacity 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+	-o-transition: opacity 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+	-ms-transition: opacity 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+	transition: opacity 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+}
+
+.card#card-visitors .header .content .data .top {
+	width: 100%;
+	height: 40%;
+}
+
+.card#card-visitors .header .content .data .top .title {
+	width: 100%;
+}
+
+.card#card-visitors .header .content .data .graph {
+	position: relative;
+	width: calc(100% - 40px);
+	height: 60%;
+	margin: 0 20px 20px 20px;
+}
+
+.card#card-visitors .header .content .data .graph .horizontal {
+	width: 100%;
+	height: 100%;
+}
+
+.card#card-visitors .header .content .data .graph .horizontal div {
+	height: 20%;
+}
+
+.card#card-visitors .header .content .data .graph .horizontal div hr {
+	border: 1px solid #FFFFFF;
+	opacity: .25;
+}
+
+.card#card-visitors .header .content .data .graph .horizontal div p {
+	margin-top: 1px;
+	opacity: .7;
+	font-size: 13px;
+}
+
+.card#card-visitors .header .content .data .graph .vertical {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-moz-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	position: absolute;
+	width: 90%;
+	height: 100%;
+	top: 0;
+	margin-left: 10%;
+}
+
+.card#card-visitors .header .content .data .graph .vertical .day {
+	position: relative;
+	width: calc(100% / 14);
+	height: 100%;
+}
+
+.card#card-visitors .header .content .data .graph .vertical .day .line-container {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-moz-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: absolute;
+	width: 2px;
+	height: 80%;
+	max-height: 0;
+	bottom: 20%;
+	margin: 0 calc((100% - 2px) / 2);
+	-webkit-transition: max-height 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+	-moz-transition: max-height 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+	-o-transition: max-height 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+	-ms-transition: max-height 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+	transition: max-height 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+}
+
+.card#card-visitors .header .content .data .graph .vertical .day .line-container .line {
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+.card#card-visitors .header .content .data .graph .vertical .day p {
+	position: absolute;
+	height: 20%;
+	bottom: 0;
+	margin-bottom: -3px;
+	opacity: .7;
+	font-size: 13px;
+}
+
+.card#card-visitors .header .content .data .graph .vertical .day .hidden {
+	opacity: 0;
+}
+
+.card#card-visitors .header .content .title {
+	margin-top: 15px;
+	font-size: 25px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.card#card-visitors .header .content .date {
+	width: 100%;
+	opacity: .7;
+	text-align: center;
+}
+
+.card#card-visitors .header .content .float {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 50%;
+	right: calc(50% - 25px);
+	opacity: 0;
+	border-radius: 100%;
+	background-color: #FF9800;
+	-webkit-transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, opacity 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+	-moz-transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, opacity 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+	-o-transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, opacity 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+	-ms-transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, opacity 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+	transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, opacity 0s cubic-bezier(0.4, 0.0, 0.2, 1) 0s;
+}
+
+.card#card-visitors .info {
+	width: calc(100% - 40px);
+	height: calc(40% - 80px);
+	padding: 40px 20px;
+	color: #9E9E9E;
+}
+
+.card#card-visitors .info .counter {
+	margin-top: 8px;
+	color: #212121;
+	font-size: 45px;
+	font-weight: 400;
+	line-height: 40px;
+}
+
+.card#card-visitors .info .counter .unit {
+	font-size: 15px;
+}
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+++++++++++++++++++++++==
+<input id="slider" class="customSlider" type="checkbox">
+<label for="slider"></label>
+
+<div class="wrapper">
+	<div class="top-icons">
+		<i class="fas fa-long-arrow-alt-left"></i>
+		<i class="fas fa-ellipsis-v"></i>
+		<i class="far fa-heart"></i>
+	</div>
+	
+	<div class="profile">
+		<img src="https://images.unsplash.com/photo-1484186139897-d5fc6b908812?ixlib=rb-0.3.5&s=9358d797b2e1370884aa51b0ab94f706&auto=format&fit=crop&w=200&q=80%20500w" class="thumbnail">
+		<div class="check"><i class="fas fa-check"></i></div>
+		<h3 class="name">Beverly Little</h3>
+		<p class="title">Javascript Developer</p>
+		<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam aliquid porro!</p>
+		<button type="button" class="btn">Hire Me</button>
+	</div>
+	
+	<div class="social-icons">
+		<div class="icon">
+			<a href="/"><i class="fab fa-dribbble"></i></a>
+			<h4>12.8k</h4>
+			<p>Followers</p>
+		</div>
+		
+		<div class="icon">
+			<a href="#"><i class="fab fa-behance"></i></a>
+			<h4>12.8k</h4>
+			<p>Followers</p>
+		</div>
+		
+		<div class="icon">
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<h4>12.8k</h4>
+			<p>Followers</p>
+		</div>
+	</div>
+</div>
+
+<div class="concept">concept by 
+	<a href="https://dribbble.com/shots/4346772-Profile-Card" target="_blank">
+		<i class="fab fa-dribbble"></i> Vijay Verma
+	</a>
+</div>
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+      display: flex;
+      position: relative;
+      background: #eeeeec;
+    align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      
+      font-family: 'Open Sans', sans-serif;
+      font-size: 100%;
+  }
+  
+  // ------------------------------------------------
+  
+  $purple-gradient: linear-gradient(45deg, rgba(87,29,146,1) 0%,rgba(172,25,102,1) 100%);
+  $purple-gradient: linear-gradient(to bottom right, #C90A6D, #FF48A0);
+  $blue1-gradient: linear-gradient(to bottom right, #5E5AEC, #3F9EFC);
+  $blue2-gradient: linear-gradient(to bottom right, #6452E9, #639FF9);
+  $shadow: 0 13px 26px rgba(#000, .2), 0 3px 6px rgba(#000, .2);
+  
+  // ------------------------------------------------
+  
+  .customSlider {
+    opacity: 0;
+    display: none;
+      + label {
+          position: relative;
+          top: 35px;
+          left: 15px;
+          cursor: pointer;
+          &:before, &:after {
+              background: #FFFFFF;
+              position: absolute;
+              content: '';
+          }
+          &:before {
+              top: -90px; left: -60px;
+              width: 80px;
+              height: 40px;
+              background: #ccc;
+              border-radius: 20px;
+              transition: background .75s;
+          }
+          &:after {
+              height: 34px; width: 34px;
+              top: -87px; left: -55px;
+              border-radius: 50%;
+              transition: all .5s;
+          }
+      }
+      
+      &:checked + label:after {
+          height: 34px; width: 34px;
+          top: -87px; left: -19px;
+          border-radius: 50%;
+      }
+      
+      &:checked ~ .wrapper {
+          color: #fff;
+          transition: background .6s ease;
+          background: #31394D;
+          
+          .top-icons {
+              i {
+                  color: #fff;
+              }
+          }
+          
+          .profile {
+              // &:after {background: #ececece;}
+              .name {
+                  color: #FDFEFF;
+              }
+              
+              .title {
+                  color: #7C8097;
+              } 
+              
+              .description {
+                  color: #FDFEFF;
+              }
+          }
+          .icon {
+              h4 {
+                  color: #FFFFFF;
+              }
+              
+              p {
+                  color: #666B7D;
+              }
+          }
+      }
+  }
+  
+  .wrapper {
+    width: 320px;
+    height: 540px;
+    background: #FDFEFF;
+      transition: background .6s ease;
+      border-radius: 10px;
+      padding: 20px 20px 20px 20px;
+      box-shadow: 0 8px 40px rgba(#000000, .2);
+      
+      .top-icons {
+          i {
+              color: #080911;
+              &:nth-of-type(1) {
+                  float: left;
+              }
+              &:nth-of-type(2) {
+                  float: right;
+              }
+              &:nth-of-type(3) {
+                  float: right;
+                  padding-right: .8em;
+              }
+          }
+      }
+      .profile {
+          margin-top: 2.2em;
+          position: relative;
+          
+          &:after {
+              width: 100%;
+              height: 1px;
+              content: ' ';
+              display: block;
+              margin-top: 1.3em;
+              background: #E9EFF6;
+          }
+          
+          .check {
+              position: absolute;
+              right: 5em;
+              bottom: 12.7em;
+              i {
+                  color: #fff;
+                  width: 20px;
+                  height: 20px;
+                  font-size: 12px;
+                  line-height: 20px;
+                  text-align: center;
+                  border-radius: 100%;
+                  background: $purple-gradient;	
+              }
+          }
+          .thumbnail {
+              width: 124px;
+              height: 124px;
+              display: flex;
+              margin-left: auto;
+              margin-right: auto;
+              margin-bottom: 1.5em;
+              border-radius: 100%;
+              box-shadow: $shadow;
+          }
+          .name {
+              color: #2D354A;
+              font-size: 24px;
+              font-weight: 600;
+              text-align: center;
+          }
+          
+          .title {
+              color: #7C8097;
+              font-size: .75em;
+              font-weight: 300;
+              text-align: center;
+              padding-top: .5em;
+              padding-bottom: .7em;
+              letter-spacing: 1.5px;
+              text-transform: uppercase;
+          }
+          
+          .description {
+              color: #080911;
+              font-size: 14px;
+              font-weight: 300;
+              text-align: center;
+              margin-bottom: 1.3em;
+          }
+          
+          .btn {
+              color: #fff;
+              width: 130px;
+              height: 42px;
+              outline: none;
+              border: none;
+              display: block;
+              cursor: pointer;
+              font-weight: 300;
+              margin-left: auto;
+              margin-right: auto;
+              border-radius: 70px;
+              box-shadow: 0 13px 26px rgba(#000, .16), 0 3px 6px rgba(#000, .16);
+              background: $purple-gradient;
+          }
+      }
+      
+      .social-icons {
+          display: flex;
+          margin-top: 1.2em;
+          justify-content: space-between;
+          
+          .icon {
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              a {
+                  color: #fff;
+                  width: 60px;
+                  height: 60px;
+                  font-size: 28px;
+                  line-height: 60px;
+                  text-align: center;
+                  border-radius: 30px;
+                  box-shadow: $shadow;
+              }
+              &:nth-of-type(1) {
+                  a {
+                      background: $purple-gradient;
+                  }
+              }
+              &:nth-of-type(2) {
+                  a {
+                      background: $blue1-gradient;
+                  }
+              }
+              &:nth-of-type(3) {
+                  a {
+                      background: $blue2-gradient;
+                  }
+              }
+              
+              h4 {
+                  color: #080911;
+                  font-size: 1em;
+                  margin-top: 1.3em;
+                  margin-bottom: .2em;
+              }
+              
+              p {
+                  color: #666B7D;
+                  font-size: 12px;		
+              }
+          }
+      }
+  }
+  
+  .concept {
+      position: absolute;
+      bottom: 25px;
+      color: #AAB0C4;
+      font-size: .9em;
+      font-weight: 400;
+      a {
+          color: rgba(172,25,102,1);
+          text-decoration: none;
+      }
+  }------------------------------------------------
+  ------------------------------------------------------------------------
+  ------------------------------------------------
++++++++++++++++++++++++++++++++++++
+<div class="frame">
+    <div class="center">
+      
+          <div class="profile">
+              <div class="image">
+                  <div class="circle-1"></div>
+                  <div class="circle-2"></div>
+                  <img src="https://100dayscss.com/codepen/jessica-potter.jpg" width="70" height="70" alt="Jessica Potter">
+              </div>
+              
+              <div class="name">Jessica Potter</div>
+              <div class="job">Visual Artist</div>
+              
+              <div class="actions">
+                  <button class="btn">Follow</button>
+                  <button class="btn">Message</button>
+              </div>
+          </div>
+          
+          <div class="stats">
+              <div class="box">
+                  <span class="value">523</span>
+                  <span class="parameter">Posts</span>
+              </div>
+              <div class="box">
+                  <span class="value">1387</span>
+                  <span class="parameter">Likes</span>
+              </div>
+              <div class="box">
+                  <span class="value">146</span>
+                  <span class="parameter">Follower</span>
+              </div>
+          </div>
+    </div>
+  </div>
+  ------------------------------------------------
+  ------------------------------------------------
+  ------------------------------------------------
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+
+$brown: #786450;
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+	background: #CA7C4E;
+  background: -webkit-linear-gradient(bottom left, #EEBE6C 0%, #CA7C4E 100%);
+  background: -moz-linear-gradient(bottom left, #EEBE6C 0%, #CA7C4E 100%);
+  background: -o-linear-gradient(bottom left, #EEBE6C 0%, #CA7C4E 100%);
+  background: linear-gradient(to top right, #EEBE6C 0%, #CA7C4E 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EEBE6C', endColorstr='#CA7C4E',GradientType=1 ); 
+  color: $brown;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+	height: 299px;
+	width: 320px;
+	background: #fff;
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+}
+
+.profile {
+	float: left;
+	width: 200px;
+	height: 320px;
+	text-align: center;
+	
+	.image {
+		position: relative;
+		width: 70px;
+		height: 70px;
+		margin: 38px auto 0 auto;
+		
+		.circle-1 {
+			position: absolute;
+			box-sizing: border-box;
+			width: 76px;
+			height: 76px;
+			top: -3px;
+			left: -3px;
+			border-width: 1px;
+			border-style: solid;
+			border-color: $brown $brown $brown transparent;
+			border-radius: 50%;
+			transition: all 1.5s ease-in-out;
+		}
+		
+		.circle-2 {
+			@extend .circle-1;
+			width: 82px;
+			height: 82px;
+			top: -6px;
+			left: -6px;
+			border-color: $brown transparent $brown $brown;
+		}
+		
+		img {
+			display: block;
+			border-radius: 50%;
+			background: #F5E8DF;
+		}
+		
+		&:hover {
+			cursor: pointer;
+			
+			.circle-1 {
+				transform: rotate(360deg);
+			}
+			
+			.circle-2 {
+				transform: rotate(-360deg);
+			}
+			
+		}
+		
+	}
+	
+	.name {
+		font-size: 15px;
+		font-weight: 600;
+		margin-top: 20px;
+	}
+	
+	.job {
+		font-size: 11px;
+		line-height: 15px;
+	}
+	
+	.actions {
+		margin-top: 33px;
+		
+		.btn {
+			display: block;
+			width: 120px;
+			height: 30px;
+			margin: 0 auto 10px auto;
+			background: none;
+			border: 1px solid $brown;
+			border-radius: 15px;
+			font-size: 12px;
+			font-weight: 600;
+			box-sizing: border-box;
+			transition: all .3s ease-in-out;
+			color: $brown;
+			
+			&:hover {
+				background: $brown;
+				color: #fff;
+			}
+		}
+	}
+	
+}
+
+.stats {
+	float: left;
+	
+	.box {
+		box-sizing: border-box;
+		width: 120px;
+		height: 99px;
+		background: #F5E8DF;
+		text-align: center;
+		padding-top: 28px;
+		transition: all .4s ease-in-out;
+		
+		&:hover {
+			background: #E1CFC2;
+			cursor: pointer;
+		}
+		
+		&:nth-child(2) {
+			margin: 1px 0;
+		}
+		
+	}
+	
+	span {
+		display: block;
+	}
+	
+	.value {
+		font-size: 18px;
+		font-weight: 600;
+	}
+	
+	.parameter {
+		font-size: 11px;
+	}
+	
+}
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++
+<div class="card">
+    <div class="ds-top"></div>
+    <div class="avatar-holder">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1820405/profile/profile-512.jpg?1533058950" alt="Albert Einstein">
+    </div>
+    <div class="name">
+      <a href="https://codepen.io/AlbertFeynman/" target="_blank">Albert Feynman</a>
+      <h6 title="Followers"><i class="fas fa-users"></i> <span class="followers">90</span></h6>
+    </div>
+    <div class="button">
+      <a href="#" class="btn" onmousedown="follow();">Follow <i class="fas fa-user-plus"></i></a>
+    </div>
+    <div class="ds-info">
+      <div class="ds pens">
+        <h6 title="Number of pens created by the user">Pens <i class="fas fa-edit"></i></h6>
+        <p>29</p>
+      </div>
+      <div class="ds projects">
+        <h6 title="Number of projects created by the user">Projects <i class="fas fa-project-diagram"></i></h6>
+        <p>0</p>
+      </div>
+      <div class="ds posts">
+        <h6 title="Number of posts">Posts <i class="fas fa-comments"></i></h6>
+        <p>0</p>
+      </div>
+    </div>
+    <div class="ds-skill">
+      <h6>Skill <i class="fa fa-code" aria-hidden="true"></i></h6>
+      <div class="skill html">
+        <h6><i class="fab fa-html5"></i> HTML5 </h6>
+        <div class="bar bar-html">
+          <p>95%</p>
+        </div>
+      </div>
+      <div class="skill css">
+        <h6><i class="fab fa-css3-alt"></i> CSS3 </h6>
+        <div class="bar bar-css">
+          <p>90%</p>
+        </div>
+      </div>
+      <div class="skill javascript">
+        <h6><i class="fab fa-js"></i> JavaScript </h6>
+        <div class="bar bar-js">
+          <p>75%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  ------------------------------------------------
+  ------------------------------------------------
+  ------------------------------------------------
+  @import url('https://fonts.googleapis.com/css?family=Krub:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #202020;
+  font-family: 'Krub', sans-serif;
+}
+
+.card {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+  background: #151515;
+  overflow: hidden;
+  .ds-top {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 300px;
+    height: 80px;
+    background: crimson;
+    animation: dsTop 1.5s;
+  }
+  .avatar-holder {
+    position: absolute;
+    margin: auto;
+    top: 40px;
+    right: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #151515,
+                inset 0 0 0 5px #000000,
+                inset 0 0 0 5px #000000,
+                inset 0 0 0 5px #000000,
+                inset 0 0 0 5px #000000,;
+    background: white;
+    overflow: hidden;
+    animation: mvTop 1.5s;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .name {
+    position: absolute;
+    margin: auto;
+    top: -60px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: inherit;
+    height: 40px;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 18px;
+        &:hover {
+          text-decoration: underline;
+          color: crimson;
+      }
+    }
+    h6 {
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: white;
+      width: 40px;
+    }
+  }
+  .button {
+    position: absolute;
+    margin: auto;
+    padding: 8px;
+    top: 20px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: inherit;
+    height: 40px;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+    outline: none;
+    a {
+      padding: 5px 20px;
+      border-radius: 10px;
+      color: white;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      font-size: 10px;
+      transition: all 1s;
+      &:hover {
+        color: white;
+        background: crimson;
+      }
+    }
+  }
+  .ds-info {
+    position: absolute;
+    margin: auto;
+    top: 120px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: inherit;
+    height: 40px;
+    display: flex;
+    .pens, .projects, .posts {
+      position: relative;
+      left: -300px;
+      width: calc(250px / 3);
+      text-align: center;
+      color: white;
+      animation: fadeInMove 2s;
+      animation-fill-mode: forwards;
+      h6 {
+        text-transform: uppercase;
+        color: crimson;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    .ds {
+      &:nth-of-type(2) {
+        animation-delay: .5s;
+      }
+      &:nth-of-type(1) {
+        animation-delay: 1s;
+      }
+    }
+  }
+  .ds-skill {
+    position: absolute;
+    margin: auto;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    animation: mvBottom 1.5s;
+    h6 {
+      margin-bottom: 5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: crimson;
+    }
+    .skill {
+      h6 {
+        font-weight: 400;
+        font-size: 8px;
+        letter-spacing: 0.05em;
+        margin: 4px 0;
+        color: white;
+      }
+      .fab {
+        color: crimson;
+        font-size: 14px;
+      }
+      .bar {
+        height: 5px;
+        background: crimson;
+        text-align: right;
+        p {
+          color: white;
+          font-size: 8px;
+          padding-top: 5px;
+          animation: fadeIn 5s;
+        }
+        &:hover {
+          background: white;
+        }
+      }
+      .bar-html {
+        width: 95%;
+        animation: htmlSkill 1s;
+        animation-delay: .4s;
+      }
+      .bar-css {
+        width: 90%;
+        animation: cssSkill 2s;
+        animation-delay: .4s;
+      }
+      .bar-js {
+        width: 75%;
+        animation: jsSkill 3s;
+        animation-delay: .4s;
+      }
+    }
+  }
+}
+
+@keyframes fadeInMove {
+  0% {
+    opacity: 0;
+    left: -300px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes htmlSkill {
+  0% {width: 0;}
+  100% {width: 95%;}
+}
+
+@keyframes cssSkill {
+  0% {width: 0;}
+  100% {width: 90%;}
+}
+
+@keyframes jsSkill {
+  0% {width: 0;}
+  100% {width: 75%;}
+}
+
+@keyframes mvBottom {
+  0% {bottom: -150px;}
+  100% {bottom: 10px;}
+}
+
+@keyframes mvTop {
+  0% {top: -150px;}
+  100% {top: 40px;}
+}
+
+@keyframes dsTop {
+  0% {top: -150px;}
+  100% {top: 0;}
+}
+
+.following {
+  color: white;
+  background: crimson;
+}
+
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------
+const target = {
+    clicked: 0,
+    currentFollowers: 90,
+    btn: document.querySelector("a.btn"),
+    fw: document.querySelector("span.followers")
+  };
+  
+  const follow = () => {
+    target.clicked += 1;
+    target.btn.innerHTML = 'Following <i class="fas fa-user-times"></i>';
+  
+    if (target.clicked % 2 === 0) {
+      target.currentFollowers -= 1;
+      target.btn.innerHTML = 'Follow <i class="fas fa-user-plus"></i>';
+    }
+    else {
+      target.currentFollowers += 1;
+    }
+  
+    target.fw.textContent = target.currentFollowers;
+    target.btn.classList.toggle("following");
+  }
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+<div class="container">
+    <div class="card">
+      <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="Person" class="card__image">
+      <p class="card__name">Lily-Grace Colley</p>
+      <div class="grid-container">
+  
+        <div class="grid-child-posts">
+          156 Post
+        </div>
+  
+        <div class="grid-child-followers">
+          1012 Likes
+        </div>
+  
+      </div>
+      <ul class="social-icons">
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+      </ul>
+      <button class="btn draw-border">Follow</button>
+      <button class="btn draw-border">Message</button>
+  
+    </div>
+    <div class="card">
+      <img src="https://lh3.googleusercontent.com/oUUiPB9sq3ACq4bUaRmo8pgvC4FUpRRrQKcGIBSOsafawZfRpF1vruFeYt6uCfL6wGDQyvOi6Ez9Bpf1Fb7APKjIyVsft7FLGR6QqdRFTiceNQBm1In9aZyrXp33cZi9pUNqjHASdA=s170-no" alt="Person" class="card__image">
+      <p class="card__name">Murray Reeve</p>
+      <div class="grid-container">
+  
+        <div class="grid-child-posts">
+          305 Post
+        </div>
+  
+        <div class="grid-child-followers">
+          2643 Likes
+        </div>
+  
+      </div>
+      <ul class="social-icons">
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+      </ul>
+      <button class="btn draw-border">Follow</button>
+      <button class="btn draw-border">Message</button>
+    </div>
+    <div class="card">
+      <img src="https://lh3.googleusercontent.com/pZwZJ5HIL5iKbA91UGMUIPR0VJWa3K0vOGzDZmY6wU3EJBUdfsby3VEyxU162XxTyOyP3D154tjkr-4Jgcx8lygYUR8eB-jVmld4dsHi1c-mE_A8jKccseAG7bdEwVrcuuk6ciNtSw=s170-no" alt="Person" class="card__image">
+      <p class="card__name">Bianca Serrano</p>
+      <div class="grid-container">
+  
+        <div class="grid-child-posts">
+          902 Post
+        </div>
+  
+        <div class="grid-child-followers">
+          1300 Likes
+        </div>
+  
+      </div>
+      <ul class="social-icons">
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+      </ul>
+      <button class="btn draw-border">Follow</button>
+      <button class="btn draw-border">Message</button>
+    </div>
+  </div>
+
+  ------------------------------------------------
+  ------------------------------------------------
+  ------------------------------------------------
+  @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+
+.container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  font-family: 'Baloo Paaji 2', cursive;
+}
+
+.card {
+  background-color: #222831;
+  height: 37rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.card__name {
+  margin-top: 15px;
+  font-size: 1.5em;
+}
+
+.card__image {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 5px solid #272133;
+  margin-top: 20px;
+  box-shadow: 0 10px 50px rgba(235, 25, 110, 1);
+}
+
+
+.draw-border {
+  box-shadow: inset 0 0 0 4px #58cdd1;
+  color: #58afd1;
+  -webkit-transition: color 0.25s 0.0833333333s;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+
+.draw-border::before,
+.draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0rem;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+.draw-border:hover {
+  color: #ffe593;
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+  border-color: #eb196e;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 0.75em 2em;
+  letter-spacing: 0.05rem;
+  margin: 1em;
+  width: 13rem;
+}
+
+.btn:focus {
+  outline: 2px dotted #55d7dc;
+}
+
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1em;
+}
+
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 0.95em;
+  left: 0.96em;
+  transition: all 265ms ease-out;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #ff003c, #c648c8);
+  transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #ff003c;
+  background: -webkit-linear-gradient(45deg, #ff003c, #c648c8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  font-size: 1.2em;
+}
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++
+<div class="card">
+    <div class="img-avatar">
+      <svg viewBox="0 0 100 100">
+      <path 
+            d="m38.977 59.074c0 2.75-4.125 2.75-4.125 0s4.125-2.75 4.125 0"></path>
+      <path d="m60.477 59.074c0 2.75-4.125 2.75-4.125 0s4.125-2.75 4.125 0"></path>
+      <path d="m48.203 69.309c1.7344 0 3.1484-1.4141 3.1484-3.1484 0-0.27734-0.22266-0.5-0.5-0.5-0.27734 0-0.5 0.22266-0.5 0.5 0 1.1836-0.96484 2.1484-2.1484 2.1484s-2.1484-0.96484-2.1484-2.1484c0-0.27734-0.22266-0.5-0.5-0.5-0.27734 0-0.5 0.22266-0.5 0.5 0 1.7344 1.4141 3.1484 3.1484 3.1484z"></path>
+      <path d="m35.492 24.371c0.42187-0.35156 0.48047-0.98438 0.125-1.4062-0.35156-0.42188-0.98438-0.48438-1.4062-0.125-5.1602 4.3047-16.422 17.078-9.5312 42.562 0.21484 0.79688 0.85547 1.4062 1.6641 1.582 0.15625 0.035156 0.31641 0.050781 0.47266 0.050781 0.62891 0 1.2344-0.27344 1.6445-0.76562 0.82812-0.98828 2.0039-1.5391 2.793-1.8203 0.56641 1.6055 1.4766 3.3594 2.9727 4.9414 2.2852 2.4219 5.4336 3.9453 9.3867 4.5547-3.6055 4.5-3.8047 10.219-3.8086 10.484-0.011719 0.55078 0.42187 1.0078 0.97656 1.0234h0.023438c0.53906 0 0.98437-0.42969 1-0.97266 0-0.054688 0.17187-4.8711 2.9805-8.7773 0.63281 1.2852 1.7266 2.5 3.4141 2.5 1.7109 0 2.7578-1.2695 3.3398-2.6172 2.8867 3.9258 3.0586 8.8359 3.0586 8.8906 0.015625 0.54297 0.46094 0.97266 1 0.97266h0.023438c0.55078-0.015625 0.98828-0.47266 0.97656-1.0234-0.007812-0.26953-0.20703-6.0938-3.9141-10.613 7.0781-1.3086 10.406-5.4219 11.969-8.9766 1.0508 0.98828 2.75 2.1992 4.793 2.1992 0.078126 0 0.15625 0 0.23828-0.003906 0.47266-0.023438 1.5781-0.074219 3.4219-4.4219 1.1172-2.6406 2.1406-6.0117 2.8711-9.4922 4.8281-22.945-4.7852-30.457-9.1445-32.621-12.316-6.1172-22.195-3.6055-28.312-0.42188-0.48828 0.25391-0.67969 0.85938-0.42578 1.3477s0.85938 0.67969 1.3477 0.42578c5.7031-2.9688 14.934-5.3047 26.5 0.4375 7.1875 3.5703 9 11.586 9.2539 17.684 0.49609 11.93-4.2617 23.91-5.7344 25.062h-0.015626c-1.832 0-3.4102-1.5742-4.0352-2.2852 0.28906-0.99609 0.44531-1.8672 0.52734-2.5117 0.62891 0.16797 1.2812 0.27344 1.9727 0.27344 0.55469 0 1-0.44922 1-1 0-0.55078-0.44531-1-1-1-7.3203 0-10.703-13.941-10.734-14.082-0.097656-0.40625-0.4375-0.71094-0.85156-0.76172-0.43359-0.050781-0.82031 0.16406-1.0117 0.53906-1.8984 3.7188-1.4297 6.7539-0.67969 8.668-6.2383-2.2852-8.9766-8.6914-9.0078-8.7617-0.17969-0.43359-0.62891-0.68359-1.1016-0.60156-0.46094 0.082032-0.80469 0.47266-0.82422 0.94141-0.14062 3.3359 0.67188 5.75 1.5 7.3164-8.3125-2.4297-10.105-11.457-10.184-11.875-0.097656-0.51562-0.57422-0.86328-1.0898-0.8125-0.51953 0.054687-0.90625 0.50391-0.89062 1.0234 0.41406 13.465-1.8516 17.766-3.2383 19.133-0.66406 0.65625-1.1992 0.67188-1.2383 0.67188-0.53906-0.050781-1.0156 0.31641-1.0938 0.85156-0.078125 0.54688 0.29688 1.0547 0.84375 1.1328 0.03125 0.003906 0.11328 0.015625 0.23828 0.015625 0.36719 0 1.1016-0.09375 1.9414-0.66406 0.050781 0.38672 0.125 0.81641 0.21875 1.2656-1.0273 0.35156-2.6211 1.0781-3.7812 2.4648-0.015625 0.019532-0.054687 0.066406-0.15625 0.046875-0.039062-0.007812-0.13281-0.039062-0.16406-0.15234-2.1875-8.1094-5.7148-28.309 8.8867-40.496zm12.711 51.828c-1.0039 0-1.5898-1.207-1.8672-2.0117 0.48047 0.023438 0.95703 0.050781 1.4531 0.050781 0.74219 0 1.4453-0.035156 2.1289-0.082031-0.24219 0.83594-0.76172 2.043-1.7148 2.043zm-13.148-30.664c1.9531 3.6211 5.6367 7.9102 12.305 8.6992 0.43359 0.046875 0.83984-0.18359 1.0234-0.57422 0.18359-0.39062 0.089844-0.85938-0.22656-1.1523-0.074219-0.070312-1.2734-1.2227-1.9688-3.6367 2 2.6094 5.3359 5.6836 10.305 6.5664 0.42187 0.070312 0.83594-0.125 1.0469-0.49219 0.21094-0.36719 0.16406-0.82812-0.11719-1.1484-0.023437-0.027344-1.9414-2.2969-1.2891-5.8906 1.2227 3.5508 3.7461 9.2227 7.8945 11.551-0.03125 0.55859-0.14844 1.668-0.55078 3.0156-0.085937 0.13672-0.125 0.28516-0.13672 0.44531-1.3008 3.8906-5.0039 9.3281-15.547 9.3281-5.375 0-9.4414-1.418-12.086-4.2109-3.5664-3.7656-3.332-8.8477-3.332-8.8984v-0.011719c1.5898-2.7227 2.5-7.3203 2.6797-13.59z"></path>
+    </svg>
+    </div>
+    <div class="card-text">
+      <div class="portada">
+      
+      </div>
+      <div class="title-total">   
+        <div class="title">Ant Collector</div>
+        <h2>Morgan Sweeney</h2>
+    
+    <div class="desc">Morgan has collected ants since they were six years old and now has many dozen ants but none in their pants.</div>
+    <div class="actions">
+      <button><i class="far fa-heart"></i></button>
+      <button><i class="far fa-envelope"></i></button>
+      <button><i class="fas fa-user-friends"></i></button>
+    </div></div>
+   
+    </div>
+    
+   
+    
+  </div>
+  _----------------------------------------------------------
+  ------------------------------------------------
+  ------------------------------------------------
+  @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+}
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+  max-width: 400px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  position: relative;
+}
+.card h2 {
+  margin: 0;
+  padding: 0 1rem;
+}
+.card .title {
+  padding: 1rem;
+  text-align: right;
+  color: green;
+  font-weight: bold;
+  font-size: 12px;
+}
+.card .desc {
+  padding: 0.5rem 1rem;
+  font-size: 12px;
+}
+.card .actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+.card svg {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+}
+
+.img-avatar {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border-radius: 50%;
+  border: 6px solid white;
+  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+  top: 15px;
+  left: 85px;
+}
+
+.card-text {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.title-total {
+  padding: 2.5em 1.5em 1.5em 1.5em;
+}
+
+path {
+  fill: white;
+}
+
+.img-portada {
+  width: 100%;
+}
+
+.portada {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-image: url("https://m.media-amazon.com/images/S/aplus-media/vc/cab6b08a-dd8f-4534-b845-e33489e91240._CR75,0,300,300_PT0_SX300__.jpg");
+  background-position: bottom center;
+  background-size: cover;
+}
+
+button {
+  border: none;
+  background: none;
+  font-size: 24px;
+  color: #8bc34a;
+  cursor: pointer;
+  transition:.5s;
+  &:hover{
+    color: #4CAF50  ;
+    transform: rotate(22deg)
+  }
+}
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++
+.card
+  .banner
+    svg(viewBox="0 0 100 100")
+      path(d="m38.977 59.074c0 2.75-4.125 2.75-4.125 0s4.125-2.75 4.125 0")
+      path(d="m60.477 59.074c0 2.75-4.125 2.75-4.125 0s4.125-2.75 4.125 0")
+      path(d="m48.203 69.309c1.7344 0 3.1484-1.4141 3.1484-3.1484 0-0.27734-0.22266-0.5-0.5-0.5-0.27734 0-0.5 0.22266-0.5 0.5 0 1.1836-0.96484 2.1484-2.1484 2.1484s-2.1484-0.96484-2.1484-2.1484c0-0.27734-0.22266-0.5-0.5-0.5-0.27734 0-0.5 0.22266-0.5 0.5 0 1.7344 1.4141 3.1484 3.1484 3.1484z")
+      path(d="m35.492 24.371c0.42187-0.35156 0.48047-0.98438 0.125-1.4062-0.35156-0.42188-0.98438-0.48438-1.4062-0.125-5.1602 4.3047-16.422 17.078-9.5312 42.562 0.21484 0.79688 0.85547 1.4062 1.6641 1.582 0.15625 0.035156 0.31641 0.050781 0.47266 0.050781 0.62891 0 1.2344-0.27344 1.6445-0.76562 0.82812-0.98828 2.0039-1.5391 2.793-1.8203 0.56641 1.6055 1.4766 3.3594 2.9727 4.9414 2.2852 2.4219 5.4336 3.9453 9.3867 4.5547-3.6055 4.5-3.8047 10.219-3.8086 10.484-0.011719 0.55078 0.42187 1.0078 0.97656 1.0234h0.023438c0.53906 0 0.98437-0.42969 1-0.97266 0-0.054688 0.17187-4.8711 2.9805-8.7773 0.63281 1.2852 1.7266 2.5 3.4141 2.5 1.7109 0 2.7578-1.2695 3.3398-2.6172 2.8867 3.9258 3.0586 8.8359 3.0586 8.8906 0.015625 0.54297 0.46094 0.97266 1 0.97266h0.023438c0.55078-0.015625 0.98828-0.47266 0.97656-1.0234-0.007812-0.26953-0.20703-6.0938-3.9141-10.613 7.0781-1.3086 10.406-5.4219 11.969-8.9766 1.0508 0.98828 2.75 2.1992 4.793 2.1992 0.078126 0 0.15625 0 0.23828-0.003906 0.47266-0.023438 1.5781-0.074219 3.4219-4.4219 1.1172-2.6406 2.1406-6.0117 2.8711-9.4922 4.8281-22.945-4.7852-30.457-9.1445-32.621-12.316-6.1172-22.195-3.6055-28.312-0.42188-0.48828 0.25391-0.67969 0.85938-0.42578 1.3477s0.85938 0.67969 1.3477 0.42578c5.7031-2.9688 14.934-5.3047 26.5 0.4375 7.1875 3.5703 9 11.586 9.2539 17.684 0.49609 11.93-4.2617 23.91-5.7344 25.062h-0.015626c-1.832 0-3.4102-1.5742-4.0352-2.2852 0.28906-0.99609 0.44531-1.8672 0.52734-2.5117 0.62891 0.16797 1.2812 0.27344 1.9727 0.27344 0.55469 0 1-0.44922 1-1 0-0.55078-0.44531-1-1-1-7.3203 0-10.703-13.941-10.734-14.082-0.097656-0.40625-0.4375-0.71094-0.85156-0.76172-0.43359-0.050781-0.82031 0.16406-1.0117 0.53906-1.8984 3.7188-1.4297 6.7539-0.67969 8.668-6.2383-2.2852-8.9766-8.6914-9.0078-8.7617-0.17969-0.43359-0.62891-0.68359-1.1016-0.60156-0.46094 0.082032-0.80469 0.47266-0.82422 0.94141-0.14062 3.3359 0.67188 5.75 1.5 7.3164-8.3125-2.4297-10.105-11.457-10.184-11.875-0.097656-0.51562-0.57422-0.86328-1.0898-0.8125-0.51953 0.054687-0.90625 0.50391-0.89062 1.0234 0.41406 13.465-1.8516 17.766-3.2383 19.133-0.66406 0.65625-1.1992 0.67188-1.2383 0.67188-0.53906-0.050781-1.0156 0.31641-1.0938 0.85156-0.078125 0.54688 0.29688 1.0547 0.84375 1.1328 0.03125 0.003906 0.11328 0.015625 0.23828 0.015625 0.36719 0 1.1016-0.09375 1.9414-0.66406 0.050781 0.38672 0.125 0.81641 0.21875 1.2656-1.0273 0.35156-2.6211 1.0781-3.7812 2.4648-0.015625 0.019532-0.054687 0.066406-0.15625 0.046875-0.039062-0.007812-0.13281-0.039062-0.16406-0.15234-2.1875-8.1094-5.7148-28.309 8.8867-40.496zm12.711 51.828c-1.0039 0-1.5898-1.207-1.8672-2.0117 0.48047 0.023438 0.95703 0.050781 1.4531 0.050781 0.74219 0 1.4453-0.035156 2.1289-0.082031-0.24219 0.83594-0.76172 2.043-1.7148 2.043zm-13.148-30.664c1.9531 3.6211 5.6367 7.9102 12.305 8.6992 0.43359 0.046875 0.83984-0.18359 1.0234-0.57422 0.18359-0.39062 0.089844-0.85938-0.22656-1.1523-0.074219-0.070312-1.2734-1.2227-1.9688-3.6367 2 2.6094 5.3359 5.6836 10.305 6.5664 0.42187 0.070312 0.83594-0.125 1.0469-0.49219 0.21094-0.36719 0.16406-0.82812-0.11719-1.1484-0.023437-0.027344-1.9414-2.2969-1.2891-5.8906 1.2227 3.5508 3.7461 9.2227 7.8945 11.551-0.03125 0.55859-0.14844 1.668-0.55078 3.0156-0.085937 0.13672-0.125 0.28516-0.13672 0.44531-1.3008 3.8906-5.0039 9.3281-15.547 9.3281-5.375 0-9.4414-1.418-12.086-4.2109-3.5664-3.7656-3.332-8.8477-3.332-8.8984v-0.011719c1.5898-2.7227 2.5-7.3203 2.6797-13.59z")
+  .menu
+    .opener
+      span
+      span
+      span
+  h2.name Morgan Sweeney
+  .title Ant Collector
+  .actions
+    .follow-info
+      h2
+        a(href="#")
+          span 12
+          small Followers
+      h2
+        a(href="#")
+          span 1000
+          small Following
+    .follow-btn
+      button Follow
+  .desc Morgan has collected ants since they were six years old and now has many dozen ants but none in their pants.
+
+  ------------------------------------------------------------------------
+  ------------------------------------------------------------------------
+  ------------------------------------------------------------------------
+  font-color = #404040
+dp-size = 8rem
+padding-size = 2rem
+opener-size = 2.5rem
+dot-size = 0.4rem
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700")
+
+body
+  font-size 16px
+  color font-color
+  font-family Montserrat, sans-serif
+  background-image linear-gradient(to bottom right, #ff9eaa 0% 65%, #e860ff 95% 100%)
+  background-position center
+  background-attachment fixed
+  margin 0
+  padding padding-size 0
+  display grid
+  place-items center
+  box-sizing border-box
+  
+.card
+  background-color white
+  max-width 360px
+  display flex
+  flex-direction column
+  overflow hidden
+  border-radius 2rem
+  box-shadow 0px 1rem 1.5rem rgba(black, 0.5)
+  .banner
+    background-image url(https://images.unsplash.com/photo-1545703549-7bdb1d01b734?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ)
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    height 11rem
+    display flex
+    align-items flex-end
+    justify-content center
+    box-sizing border-box
+    svg
+      background-color white
+      width dp-size
+      height dp-size
+      box-shadow 0 0.5rem 1rem rgba(black, 0.3)
+      border-radius 50%
+      transform translateY(50%)
+      transition transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28)
+      &:hover
+        transform translateY(50%) scale(1.3)
+  .menu
+    width 100%
+    height 5.5rem
+    padding 1rem
+    display flex
+    align-items flex-start
+    justify-content flex-end
+    position relative
+    box-sizing border-box
+    .opener
+      width opener-size
+      height opener-size
+      position relative
+      border-radius 50%
+      transition background-color 100ms ease-in-out
+      &:hover
+        background-color #f2f2f2
+      span
+        background-color font-color
+        width dot-size
+        height dot-size
+        position absolute
+        top 0
+        left "calc(50% - %s)" % (dot-size / 2)
+        border-radius 50%
+        &:nth-child(1)
+          top 0.45rem
+        &:nth-child(2)
+          top 1.05rem
+        &:nth-child(3)
+          top 1.65rem
+  h2.name
+    text-align center
+    padding 0 padding-size 0.5rem
+    margin 0
+  .title
+    color lighten(font-color, 50%)
+    font-size 0.85rem
+    text-align center
+    padding 0 padding-size 1.2rem
+  .actions
+    padding 0 padding-size 1.2rem
+    display flex
+    flex-direction column
+    order 99
+    .follow-info
+      padding 0 0 1rem
+      display flex
+      h2
+        text-align center
+        width 50%
+        margin 0
+        box-sizing border-box
+        a
+          text-decoration none
+          padding 0.8rem
+          display flex
+          flex-direction column
+          border-radius 0.8rem
+          transition background-color 100ms ease-in-out
+          span
+            color #1c9eff
+            font-weight bold
+            transform-origin bottom
+            transform scaleY(1.3)
+            transition color 100ms ease-in-out
+          small
+            color #afafaf
+            font-size 0.85rem
+            font-weight normal
+          &:hover
+            background-color #f2f2f2
+            span
+              color #007ad6
+    .follow-btn
+      button
+        color inherit
+        font inherit
+        font-weight bold
+        background-color #ffd01a
+        width 100%
+        border none
+        padding 1rem
+        outline none
+        box-sizing border-box
+        border-radius 1.5rem / 50%
+        transition background-color 100ms ease-in-out, transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28)
+        &:hover
+          background-color #efb10a
+          transform scale(1.1)
+        &:active
+          background-color #e8a200
+          transform scale(1)
+   .desc
+    text-align justify
+    padding 0 padding-size 2.5rem
+    order 100
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+<div class="card-container">
+	<span class="pro">PRO</span>
+	<img class="round" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user" />
+	<h3>Ricky Park</h3>
+	<h6>New York</h6>
+	<p>User interface designer and <br/> front-end developer</p>
+	<div class="buttons">
+		<button class="primary">
+			Message
+		</button>
+		<button class="primary ghost">
+			Following
+		</button>
+	</div>
+	<div class="skills">
+		<h6>Skills</h6>
+		<ul>
+			<li>UI / UX</li>
+			<li>Front End Development</li>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>React</li>
+			<li>Node</li>
+		</ul>
+	</div>
+</div>
+
+<footer>
+	<p>
+		Created with <i class="fa fa-heart"></i> by
+		<a target="_blank" href="https://florin-pop.com">Florin Pop</a>
+		- Read how I created this
+		<a target="_blank" href="https://florin-pop.com/blog/2019/04/profile-card-design">here</a>
+		- Design made by
+		<a target="_blank" href="https://dribbble.com/shots/6276930-Profile-Card-UI-Design">Ildiesign</a>
+	</p>
+</footer>
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #28223F;
+	font-family: Montserrat, sans-serif;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	min-height: 100vh;
+	margin: 0;
+}
+
+h3 {
+	margin: 10px 0;
+}
+
+h6 {
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.card-container {
+	background-color: #231E39;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	padding-top: 30px;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+}
+
+.card-container .pro {
+	color: #231E39;
+	background-color: #FEBB0B;
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 7px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+.card-container .round {
+	border: 1px solid #03BFCB;
+	border-radius: 50%;
+	padding: 7px;
+}
+
+button.primary {
+	background-color: #03BFCB;
+	border: 1px solid #03BFCB;
+	border-radius: 3px;
+	color: #231E39;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	padding: 10px 25px;
+}
+
+button.primary.ghost {
+	background-color: transparent;
+	color: #02899C;
+}
+
+.skills {
+	background-color: #1F1A36;
+	text-align: left;
+	padding: 15px;
+	margin-top: 30px;
+}
+
+.skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.skills ul li {
+	border: 1px solid #2D2747;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: #3c97bf;
+    text-decoration: none;
+}
+------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/animate.css">
+	
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<style>
+
+/*** FONTS ***/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+
+
+
+/*** VARIABLES ***/
+/* Colors */
+$black: #1d1f20;
+$blue: #83e4e2;
+$green: #a2ed56;
+$yellow: #fddc32;
+$white: #fafafa;
+
+
+
+/*** EXTEND ***/
+/* box-shadow */
+%boxshadow {
+  box-shadow: 0.25rem 0.25rem 0.6rem rgba(0,0,0,0.05), 0 0.5rem 1.125rem rgba(75,0,0,0.05);
+}
+
+
+
+/*** STYLE ***/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $white;
+  color: $black;
+  font-family: 'Raleway', sans-serif;
+}
+
+main {
+  display: block;
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 1rem;
+}
+
+
+ol.gradient-list {
+  counter-reset: gradient-counter;
+  list-style: none;
+  margin: 1.75rem 0;
+  padding-left: 1rem;
+  > li {
+    background: white;
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+    @extend %boxshadow;
+    counter-increment: gradient-counter;
+    margin-top: 1rem;
+    min-height: 3rem;
+    padding: 1rem 1rem 1rem 3rem;
+    position: relative;
+    &::before,
+    &::after {
+      background: linear-gradient(135deg, $blue 0%,$green 100%);
+      border-radius: 1rem 1rem 0 1rem;
+      content: '';
+      height: 3rem;
+      left: -1rem;
+      overflow: hidden;
+      position: absolute;
+      top: -1rem;
+      width: 3rem;
+    }
+    &::before {
+      align-items: flex-end;
+      @extend %boxshadow;
+      content: counter(gradient-counter);
+      color: $black;
+      display: flex;
+      font: 900 1.5em/1 'Montserrat';
+      justify-content: flex-end;
+      padding: 0.125em 0.25em;
+      z-index: 1;
+    }
+    @for $i from 1 through 5 {
+      &:nth-child(10n+#{$i}):before {
+        background: linear-gradient(135deg, rgba($green, $i * 0.2) 0%,rgba($yellow, $i * 0.2) 100%);
+      }
+    }
+    @for $i from 6 through 10 {
+      &:nth-child(10n+#{$i}):before {
+        background: linear-gradient(135deg, rgba($green, 1 - (($i - 5) * 0.2)) 0%,rgba($yellow, 1 - (($i - 5) * 0.2)) 100%);
+      }
+    }
+    + li {
+      margin-top: 2rem;
+    }
+  }
+}
+
+</style>
+
+	<div class="py-1 top">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm text-center text-md-left mb-md-0 mb-2 pr-md-4 d-flex topper align-items-center">
+					<p class="mb-0 w-100">
+						<span class="fa fa-paper-plane"></span>
+						<span class="text">info@jordanwaysofcooking.com</span>
+					</p>
+				</div>
+				<div class="col-sm justify-content-center d-flex mb-md-0 mb-2">
+					<div class="social-media">
+						<p class="mb-0 d-flex">
+							<a href="https://m.facebook.com/JordanWaysofCooking/" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+							<a href="https://twitter.com/JWCRestaurant" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+							<a href="https://www.instagram.com/p/CST_XZODAUo/?utm_medium=copy_link" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
+					<p class="mb-0 register-link"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Inquire Now</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<main>
+		<ol class="gradient-list">
+		  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+		  <li>Aenean tincidunt elit at ipsum cursus, vitae interdum nulla suscipit.</li>
+		  <li>Curabitur in orci vel risus facilisis accumsan.</li>
+		  <li>Morbi eleifend tortor lacinia sapien sagittis, quis pellentesque felis egestas.</li>
+		  <li>Aenean viverra dui quis leo lacinia fringilla.</li>
+		  <li>Sed varius lectus ac condimentum egestas.</li>
+		  <li>Maecenas faucibus lorem nec lorem posuere, a rhoncus velit porttitor.</li>
+		  <li>Proin porta arcu ac elit malesuada pulvinar.</li>
+		  <li>Phasellus vitae felis sit amet mi gravida volutpat.</li>
+		  <li>Curabitur vulputate urna non efficitur interdum.</li>
+		  <li>Curabitur dapibus enim in consectetur imperdiet.</li>
+		  <li>Suspendisse consectetur nibh non condimentum porta.</li>
+		  <li>Ut placerat diam in cursus aliquet.</li>
+		  <li>Praesent vitae quam id tortor malesuada viverra ut at elit.</li>
+		  <li>Vivamus feugiat justo id volutpat rutrum.</li>
+		  <li>Nulla volutpat erat non mauris condimentum, nec consequat elit posuere.</li>
+		  <li>Vestibulum eu risus efficitur, porta lacus a, mollis metus.</li>
+		  <li>Maecenas finibus arcu vel urna commodo, ac bibendum massa vestibulum.</li>
+		  <li>Praesent eleifend leo eget consectetur interdum.</li>
+		  <li>Suspendisse et lectus gravida, interdum mauris aliquet, mattis purus.</li>
+		  <li>In nec nisl feugiat, blandit odio non, vulputate neque.</li>
+		  <li>Sed id felis mollis, bibendum orci a, condimentum augue.</li>
+		  <li>Etiam eleifend ipsum nec nibh aliquam, non commodo risus eleifend.</li>
+		  <li>Curabitur in ipsum eget lacus blandit maximus in at sem.</li>
+		  <li>Curabitur sagittis ante nec libero maximus, ut imperdiet elit egestas.</li>
+		  <li>Proin congue felis sed ultrices elementum.</li>
+		  <li>Duis sit amet velit et lectus eleifend interdum non quis ex.</li>
+		  <li>Praesent congue lectus a felis pharetra malesuada.</li>
+		  <li>Sed vel mauris condimentum, egestas dolor eu, porttitor nisl.</li>
+		  <li>Donec sed elit tincidunt, accumsan magna sed, facilisis libero.</li>
+		  <li>Curabitur vel purus quis justo placerat euismod mollis ac arcu.</li>
+		  <li>Sed eget mi et justo luctus mollis ut non augue.</li>
+		  <li>Suspendisse sit amet lectus et magna euismod tempor.</li>
+		  <li>Vestibulum accumsan velit et ipsum pellentesque, vitae ultricies erat blandit.</li>
+		  <li>Pellentesque vel dolor ac risus efficitur convallis.</li>
+		  <li>Maecenas feugiat quam at facilisis dapibus.</li>
+		  <li>Cras commodo leo sit amet lacus lacinia, eget rutrum sem sodales.</li>
+		  <li>Ut sit amet risus finibus, iaculis lectus sit amet, varius lectus.</li>
+		  <li>Duis dignissim elit eget erat maximus luctus.</li>
+		</ol>
+	  </main>
+	<footer class="ftco-footer">
+		<div class="container mb-5 pb-4">
+			<div class="row">
+				<div class="col-lg col-md-6">
+					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2 d-flex align-items-center">About</h2>
+						<p>Far far away, behind the word mountains, far from the countries.</p>
+						<ul class="ftco-footer-social list-unstyled mt-4">
+							<li><a href="#"><span class="fa fa-twitter"></span></a></li>
+							<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+							<li><a href="#"><span class="fa fa-instagram"></span></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2">Links</h2>
+						<div class="d-flex">
+							<ul class="list-unstyled mr-md-4">
+								<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Project</a></li>
+								<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About Us</a></li>
+								<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
+								<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog Posts</a></li>
+								<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Industries</a></li>
+							</ul>
+							<ul class="list-unstyled ml-md-5">
+								<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+								<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Help</a></li>
+								<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Privacy Policy</a></li>
+								<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Terms of Use</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg col-md-6">
+					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2">Services</h2>
+						<ul class="list-unstyled">
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Customer Services</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Prompt Delivery</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Reliable Equipment</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>New Heavy Equipment</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg col-md-6">
+					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2">Have a Questions?</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><span class="fa fa-map-marker mr-3"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+								<li><a href="#"><span class="fa fa-phone mr-3"></span><span class="text">+2 392 3929 210</span></a></li>
+								<li><a href="#"><span class="fa fa-paper-plane mr-3"></span><span class="text">info@yourdomain.com</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid bg-primary">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 aside-stretch py-3">
+						
+						<p class="mb-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true" class="fa fa-close"></span>
+						</button>
+					</div>
+					<div class="modal-body p-4 p-md-5">
+						<form action="#" class="appointment-form ftco-animate">
+							<h3>Request Quote</h3>
+							<div class="">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="First Name">
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Last Name">
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Phone">
+								</div>
+							</div>
+							<div class="">
+								<div class="form-group">
+									<div class="form-field">
+										<div class="select-wrap">
+											<div class="icon"><span class="fa fa-chevron-down"></span></div>
+											<select name="" id="" class="form-control">
+												<option value="">Select Your Services</option>
+												<option value="">Architecture</option>
+												<option value="">Renovation</option>
+												<option value="">Construction</option>
+												<option value="">Interior &amp; Exterior</option>
+												<option value="">Chemical Research</option>
+												<option value="">Petroleum &amp; Gas</option>
+												<option value="">Other Services</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="">
+								<div class="form-group">
+									<textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="Message"></textarea>
+								</div>
+								<div class="form-group">
+									<input type="submit" value="Request A Quote" class="btn btn-primary py-3 px-4">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- loader -->
+		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-migrate-3.0.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/jquery.stellar.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/jquery.animateNumber.min.js"></script>
+		<script src="js/bootstrap-datepicker.js"></script>
+		<script src="js/jquery.timepicker.min.js"></script>
+		<script src="js/scrollax.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+		<script src="js/google-map.js"></script>
+		
+		<script src="js/main.js"></script>
+		
+	</body>
+	</html>
